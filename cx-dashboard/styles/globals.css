@@ -1,0 +1,70 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+:root {
+  /* Color system */
+  --bg: #0a0d0f;
+  --surface: #111518;
+  --surface-2: #191e23;
+  --surface-3: #222930;
+  --border: #2a333c;
+  --border-subtle: #1c2228;
+
+  --text-primary: #e8edf2;
+  --text-secondary: #7a8a99;
+  --text-muted: #4a5a68;
+
+  /* Brand accents */
+  --accent-cyan: #00d4c8;
+  --accent-green: #00e87a;
+  --accent-amber: #f5a623;
+  --accent-red: #ff4f5e;
+  --accent-purple: #9b6dff;
+  --accent-blue: #3d9df3;
+
+  /* Semantic */
+  --good: #00e87a;
+  --warn: #f5a623;
+  --bad: #ff4f5e;
+  --neutral: #3d9df3;
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* Spacing */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Utility classes */
+.mono { font-family: var(--font-mono); }
+.display { font-family: var(--font-display); }
